@@ -60,16 +60,33 @@ body header {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
+body header section {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 0.5fr 0, 5fr 1fr;
+}
+body header section .bi-chevron-bar-left {
+  align-self: center;
+  justify-self: center;
+  font-size: 3rem;
+}
+body header section #side-menu-btn {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 body header section figure {
   padding: 10px;
   text-align: center;
-  grid-column: 1/2;
+  grid-column: 3/4;
   border-right: 1px solid #000;
 }
 body header section figure img {
-  width: 30%;
+  font-size: 2rem;
 }
 body header section:nth-of-type(2) {
+  grid-column: 2/3;
   border-bottom: 1px solid #000;
 }
 body main {
@@ -77,30 +94,32 @@ body main {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-body main nav {
-  grid-column: 1/2;
-}
-body main nav > ul {
-  margin-left: 20px;
+body main aside {
   border-right: 1px solid #000;
 }
-body main nav > ul li {
+body main aside nav {
+  margin-bottom: 20px;
+}
+body main aside nav h2 {
+  font-size: 1.4rem;
   font-weight: 600;
-  font-size: 1.3em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  cursor: pointer;
+  padding-left: 10px;
 }
-body main nav > ul li ul li {
-  font-weight: normal;
-  font-size: 0.8em;
-  margin-bottom: 20px;
-}
-body main nav > ul li ul li a:hover {
-  text-decoration: underline;
-}
-body main nav > ul li a {
+body main aside nav a {
   text-decoration: none;
   color: #000;
+}
+body main aside nav > ul {
+  padding: 0 0 0 20px;
+}
+body main aside nav > ul li {
+  text-transform: uppercase;
+  padding: 5px 0 10px 0;
+}
+body main aside nav > ul li a:hover {
+  text-decoration: underline;
 }
 body main section {
   grid-column: 2/3;
