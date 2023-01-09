@@ -6,6 +6,7 @@ html{
 .hidden {
     display: none;
 }
+//////////// CLASS UTILE /////////////
 
 .open {
     display:block;
@@ -15,9 +16,22 @@ html{
     display:none;
 }
 
+.borderRight {
+    border-right: 1px solid #000;
+}
+.borderTop {
+    border-top: 1px solid #000;
+}
+.borderNone{
+    border: none;
+}
+
+///////////// CSS //////////////
+
 body {
     display: grid;
     grid-template-rows: 0.5fr 2fr 0.5fr;
+    height: 100vh;
     
     header {
         grid-row: 1/2;
@@ -45,7 +59,6 @@ body {
                 padding: 10px;
                 text-align: center;
                 grid-column: 3/4;
-                border-right: 1px solid #000;
                 
                 img {
                     font-size: 2rem;
@@ -55,7 +68,6 @@ body {
         }
         section:nth-of-type(2) {
             grid-column: 2/3;
-            border-bottom:1px solid #000;
         }
 
     }
@@ -101,6 +113,18 @@ body {
 
         section {
             grid-column: 2/3;
+            border-top: 1px solid #000;
+            
+            .addUser{
+                background-color:#023E8A;
+                color:#fff;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+        .sectionGrid {
+            grid-column: 1/3;
         }
     }
 }
