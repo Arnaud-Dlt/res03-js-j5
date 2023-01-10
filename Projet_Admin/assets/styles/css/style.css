@@ -135,6 +135,7 @@ body main aside nav > ul li a:hover {
 body main section {
   grid-column: 2/3;
   border-top: 1px solid #000;
+  padding: 20px 0 0 20px;
 }
 body main section .addUser {
   background-color: #023E8A;
@@ -142,6 +143,8 @@ body main section .addUser {
   border: none;
   padding: 10px;
   border-radius: 5px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 body main .sectionGrid {
   grid-column: 1/3;

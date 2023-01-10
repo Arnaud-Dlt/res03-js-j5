@@ -114,6 +114,7 @@ body {
         section {
             grid-column: 2/3;
             border-top: 1px solid #000;
+            padding: 20px 0 0 20px;
             
             .addUser{
                 background-color:#023E8A;
@@ -121,6 +122,8 @@ body {
                 border: none;
                 padding: 10px;
                 border-radius: 5px;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
             }
         }
         .sectionGrid {
@@ -128,3 +131,4 @@ body {
         }
     }
 }
+
